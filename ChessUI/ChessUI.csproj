@@ -8,13 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ApplicationDefinition Remove="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="App.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Assets\BishopB.png" />
     <None Remove="Assets\BishopW.png" />
-    <None Remove="Assets\BlackWhite.png" />
     <None Remove="Assets\Board.png" />
     <None Remove="Assets\CursorB.cur" />
     <None Remove="Assets\CursorW.cur" />
-    <None Remove="Assets\GreenWhite.png" />
     <None Remove="Assets\icon.ico" />
     <None Remove="Assets\KingB.png" />
     <None Remove="Assets\KingW.png" />
@@ -29,17 +35,23 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Remove="MainWindow.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ChessLogic\ChessLogic.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Assets\BishopB.png" />
     <Resource Include="Assets\BishopW.png" />
-    <Resource Include="Assets\BlackWhite.png" />
     <Resource Include="Assets\Board.png" />
     <Resource Include="Assets\CursorB.cur" />
     <Resource Include="Assets\CursorW.cur" />
-    <Resource Include="Assets\GreenWhite.png" />
     <Resource Include="Assets\icon.ico" />
     <Resource Include="Assets\KingB.png" />
     <Resource Include="Assets\KingW.png" />
@@ -51,6 +63,7 @@
     <Resource Include="Assets\QueenW.png" />
     <Resource Include="Assets\RookB.png" />
     <Resource Include="Assets\RookW.png" />
+    <Resource Include="MainWindow.xaml" />
   </ItemGroup>
 
 </Project>
